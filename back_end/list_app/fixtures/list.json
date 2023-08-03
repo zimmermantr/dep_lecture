@@ -1,0 +1,26 @@
+[
+{
+  "model": "list_app.list",
+  "pk": 1,
+  "fields": {
+    "list_name": "I need to do this",
+    "app_user": 1
+  }
+},
+{
+  "model": "list_app.list",
+  "pk": 2,
+  "fields": {
+    "list_name": "clean the garage",
+    "app_user": 1
+  }
+},
+{
+  "model": "list_app.list",
+  "pk": 3,
+  "fields": {
+    "list_name": "play pokemon until my thumbs bleed",
+    "app_user": 1
+  }
+}
+]

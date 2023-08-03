@@ -1,0 +1,71 @@
+[
+    {
+      "id": 1,
+      "list_name": "Shopping List",
+      "tasks": [
+        {
+          "id": 1,
+          "task_name": "Buy groceries",
+          "completed": false
+        },
+        {
+          "id": 2,
+          "task_name": "Purchase new clothes",
+          "completed": true
+        },
+        {
+          "id": 3,
+          "task_name": "Get a gift for a friend",
+          "completed": false
+        },
+        {
+          "id": 4,
+          "task_name": "Buy household supplies",
+          "completed": false
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "list_name": "Home Improvement",
+      "tasks": [
+        {
+          "id": 8,
+          "task_name": "Paint the living room",
+          "completed": false
+        },
+        {
+          "id": 9,
+          "task_name": "Install new shelves",
+          "completed": true
+        },
+        {
+          "id": 10,
+          "task_name": "Fix leaking faucet",
+          "completed": false
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "list_name": "Study Goals",
+      "tasks": [
+        {
+          "id": 5,
+          "task_name": "Read a book",
+          "completed": false
+        },
+        {
+          "id": 6,
+          "task_name": "Finish online course",
+          "completed": false
+        },
+        {
+          "id": 7,
+          "task_name": "Practice coding",
+          "completed": false
+        }
+      ]
+    }
+  ]
+  
