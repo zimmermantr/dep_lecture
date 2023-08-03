@@ -12,7 +12,7 @@ export const List = ({ list }) => {
     <div id={`list${list.id}`}>
       <h3>{list.list_name}</h3>
       {tasks.map((task) => (
-        <Task task={task} />
+        <Task key={`task${task.id}`} task={task} />
       ))}
     </div>
   );

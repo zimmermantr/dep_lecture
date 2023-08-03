@@ -5,7 +5,7 @@ export const Lists = () => {
     <div>
       <h1>Lists</h1>
       {lists.map((list)=>(
-        <List list={list}/>
+        <List key={`list${list.id}`} list={list}/>
       ))}
     </div>
   );
