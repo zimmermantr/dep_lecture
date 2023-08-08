@@ -7,7 +7,7 @@ export const RegisterPage = () => {
   const [userName, setUserName] = useState("");
   const [password, setPassword] = useState("");
   const { setUser } = useContext(userContext);
-  const navigate = useNavigate()
+  const navigate = useNavigate();
 
   useEffect(() => {
     console.log("username:  ", userName);

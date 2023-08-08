@@ -21,10 +21,10 @@ function App() {
       api.defaults.headers.common["Authorization"] = `Token ${token}`;
       let response = await api.get("users/");
       setUser(response.data);
-      navigate("home");
+      navigate("/home");
     } else {
       setUser(null);
-      navigate("login");
+      navigate("/login");
     }
   };
 
@@ -32,15 +32,34 @@ function App() {
     whoAmI();
   }, []);
 
+  const logout = async () => {
+    let response = await api.post("users/logout/");
+    if(response.status === 204){
+      localStorage.removeItem("token")
+      setUser(null)
+      delete api.defaults.headers.common["Authorization"];
+      navigate("/login")
+    }
+  }
+
+
+
   return (
     <div id="app">
       <header>
         <nav>
-          <Link to="/home">Home</Link>
-          <Link to="/lists">Lists</Link>
-          <button onClick={() => setUser(null)}>Log out</button>
-          <Link to="/">Register</Link>
-          <Link to="/login">Log In</Link>
+          {user?
+          <>
+            <Link to="/home">Home</Link>
+            <Link to="/lists">Lists</Link>
+            <button onClick={logout}>Log out</button>
+          </>
+          :
+          <>
+            <Link to="/">Register</Link>
+            <Link to="/login">Log In</Link>
+          </>
+          }
         </nav>
       </header>
       <userContext.Provider value={{ user, setUser }}>
